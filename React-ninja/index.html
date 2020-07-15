@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#" />
+  <title>React Ninja</title>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+  <script type="text/babel">
+    // let h1 = React.DOM.h1(null, [
+    //   React.DOM.span(null, React.DOM.i(null, 'italic')),
+    //   React.DOM.span(null, 'texto do span 2')])
+    let Title = React.createClass({
+      render: function () {
+        return (
+          <h1>
+            Hello World Title com JSX
+          </h1>)
+      }
+    })
+    ReactDOM.render(
+      <Title />,
+      document.getElementById('app'))
+  </script>
+</body>
+
+</html>
